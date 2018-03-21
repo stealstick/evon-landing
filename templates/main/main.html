@@ -1,18 +1,89 @@
-{% extends "main/base.html" %} {% load staticfiles %} {% block content %}
-<nav class="white">
-    <div class="nav-wrapper container">
-        <a href="#" class="brand-logo blue-text">evon</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li>
-                <a class="blue-text">유병훈</a>
-            </li>
-            <li>
-                <a class="blue-text">병신</a>
-            </li>
-            <li>
-                <a class="blue-text">ㅇㅇ</a>
-            </li>
-        </ul>
+{% extends "main/base.html" %} {% load staticfiles %} {% block style %}
+<link rel="stylesheet" href="{% static '/css/style.css' %}"> {% endblock %} {% block content %}
+<nav>
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo">
+            <img src="{% static '/media/logo.png' %}" class="logo">
+        </a>
     </div>
 </nav>
+<div class="row section no-margin no-padding">
+    <div class="col s12 l3 offset-l2 section-text-0">
+        <p class="section-tit">나만의 전기차 충전</p>
+        <p class="section-con">가장 빠르고 가까운 전기차 충전소를 찾아보세요.</p>
+        <img class="google-btn" src="{% static '/media/googleplay.png' %}">
+    </div>
+    <div class="col s12 l7">
+        <img src="{% static '/media/main.png' %}" class="main-phone">
+    </div>
+</div>
+<div class="row section section-1-2 no-margin no-padding">
+    <div class="container section-container-2">
+        <p class="section-con-2 white-text">전국 충전소기 데이터 베이스 5356기</p>
+
+        <p class="section-con-2 white-text">환경부 주관 “2017 공공급속충전기 안내 우수 어플리케이션” 수상</p>
+
+        <p class="section-con-2 white-text">한국전력공사 “K-에너지 스타트업” 지원 기업 선정</p>
+
+        <p class="section-con-2 white-text">중소벤쳐기업부 장관 정부 표창</p>
+    </div>
+</div>
+    <div class="row section no-margin no-padding">
+        <div class="col s12 l6 section-text">
+            <p class="section-tit">최적화된 서버구조</p>
+            <p class="section-con">타사보다 50배 빠른 어플리케이션 작동 속도로
+                <br /> 데이터 절감효과와 빠른 충전소 찾기 서비스를 누릴 수 있습니다.</p>
+            <img class="graph" src="{% static '/media/graph.png' %}">
+            <img class="m-graph" src="{% static '/media/m_graph.png' %}">
+        </div>
+        <div class="col s6 l5 offset-s3">
+            <img src="{% static '/media/phone.gif' %}" loop=infinite class="iphone">
+        </div>
+    </div>
+<div class="row section section-2 no-margin no-padding">
+    <div class="section-text-2">
+        <p class="section-tit">클러스터링 기술 적용</p>
+        <p class="section-con">전국에서 모든 충전소 인프라를 통계적으로
+            <br />볼 수 있는 기술을 적용하여 복잡함을 덜어내었습니다.</p>
+    </div>
+
+    <img src="{% static '/media/phone2.png' %}" loop=infinite class="iphone2">
+</div>
+<div class="container">
+    <div class="row section no-margin no-padding">
+            <div class="col s12 l6 section-text-3 offset-l1 right">
+                    <p class="section-tit">사용자 참여형 고장신고</p>
+                    <p class="section-con">타 어플에서 신고하여도 실제 신고로 이어지지 않아 답답하셨나요?
+                        <br /> 이비온의 신고기능은 (주)제주전기차충전서비스와 협력하여
+                        <br /> 실시간 고장 신고가 가능합니다.</p>
+                    <img class="singo" src="{% static '/media/singo.png' %}">
+                </div>
+        <div class="col s12 l5 ">
+            <img src="{% static '/media/phone3.png' %}" loop=infinite class="iphone3">
+        </div>
+        
+    </div>
+</div>
+
+<!--
+    <div class="block animatable bounceIn">bounceIn</div>
+    <div class="block animatable bounceInLeft">bounceInLeft</div>
+    <div class="block animatable bounceInRight">bounceInRight</div>
+    
+    <div class="block animatable fadeIn">fadeIn</div>
+    <div class="block animatable fadeInDown">fadeInDown</div>
+    <div class="block animatable fadeInUp">fadeInUp</div>
+    
+    <div class="block animatable moveUp">moveUp</div>
+    
+    <div class="block animatable fadeBgColor">fadeBgColor</div>
+    -->
+
+
+
+
+
+
+
+
 {% endblock %}

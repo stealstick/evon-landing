@@ -1,0 +1,169 @@
+
+.iphone{
+    height: 82vh;
+    margin-top: 12vh;
+    margin-bottom: 9vh;
+}
+.iphone2{
+    position: absolute;
+    height: 80vh;
+    margin-top: 10vh;
+    left:0;
+    right:0; 
+    margin-left:auto;
+    margin-right:auto; 
+
+}
+.main-phone{
+    width: 100%;
+    margin-top: 15vh;
+    margin-bottom: 9vh;
+}
+.section-text{
+    margin-top: 35vh;
+    text-align: right;
+}
+.section{
+    padding-left: 30%;
+    padding-right: 30%;
+    height: 100vh;
+    overflow: hidden;
+}
+.section-2{
+    background-color:rgba(0, 170, 255, 0.05)
+}
+.section-1-2{
+    background-color:rgba(0, 170, 255, 0.7)
+}
+.section-container-2{
+    padding:5%;
+    padding-top: 10%;
+}
+.section-tit{
+    font-size: 44px;
+    margin: 0;
+    font-weight: 400;
+}
+.section-con{
+    font-size: 17px;
+    font-weight: 300;
+    margin-top: 3px;
+}
+.section-con-2{
+    font-size: 32px;
+    font-weight: 200;
+}
+.section-text-0{
+    width: 100%;
+    margin-left:64%;
+    margin-top: 32vh;
+}
+.section-text-2{
+    position: absolute;
+    width: 100%;
+    margin-left:67%;
+    margin-top: 65vh;
+}
+.graph{
+    height:  32vh;
+    margin-top: 3vh;
+}
+.section-text-3{
+    margin-top: 32vh;
+}
+.singo{
+    height:  13vh;
+    margin-top: 5vh;
+}
+.google-btn{
+    height:  6vh;
+    margin-top: 1.6vh;
+}
+.m-graph{
+    display: none;
+}
+
+
+
+
+@media only screen and (max-width: 993px) {
+    nav .brand-logo {
+        left: 5%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    .section-text-0{
+    width: 100%;
+    margin-left:64%;
+    margin-top: 10vh;
+    text-align: center;
+}
+.google-btn{
+    position: absolute;
+    margin-top: 1.2vh;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-phone {
+    width: 100%;
+    margin-top: 15vh;
+}
+.section-text{
+    margin-top: 10vh;
+    text-align: left;
+    padding-left:15% !important;
+}
+.graph{
+    display: none;
+}
+.m-graph{
+    height:  10vh;
+    margin-top: 3vh;
+    display: block;
+}
+.iphone{
+    height: auto;
+    width: 100%;
+    margin-top: 2vh;
+    margin-bottom: 0vh;
+    left:0;
+    right:0; 
+    margin-left:auto;
+    margin-right:auto; 
+
+}
+.section{
+    padding-left: 30%;
+    padding-right: 30%;
+    height: 100vh;
+}
+.section-text-2{
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-top: 10vh;
+    text-align: center;
+}
+.iphone2 {
+    position: relative;
+    height: auto;
+    width: 60%;
+    margin-top: 5vh;
+    left: 0;
+    right: 0;
+    margin-left: 20%;
+    margin-right: auto;
+}
+.section-text-3{
+    text-align: center;
+    margin-top: 12vh;
+}
+.iphone3{
+    margin-top: 8vh;
+    margin-left:10%;
+    width: 60%;
+}
+}
