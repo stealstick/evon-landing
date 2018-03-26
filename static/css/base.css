@@ -1,3 +1,10 @@
+@font-face {
+    font-family: nanumsquare;
+    src: url('/static/font/NanumSquareLight.ttf');
+}
+body{
+    font-family:"nanumsquare", sans-serif;
+}
 nav{
     background: rgba(0,0,0,0);
     box-shadow: none;

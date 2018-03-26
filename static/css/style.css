@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family: nanumsquare;
+    src: url('/static/font/NanumSquareLight.ttf');
+}
 .iphone{
     height: 82vh;
     margin-top: 12vh;
@@ -132,7 +135,8 @@
     margin-bottom:50px;
 }
 .font-bold{
-    font-weight: 300;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
 }
 .sponser{
     padding:0 !important;
