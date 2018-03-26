@@ -1,5 +1,4 @@
-
-{% load staticfiles %} 
+ {% load staticfiles %}
 <!DOCTYPE html>
 <html>
 
@@ -14,25 +13,82 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" href="{% static '/css/scrollanimate.css' %}">
-    <link rel="stylesheet" href="{% static '/css/base.css' %}">
+    <link rel="stylesheet" href="{% static '/css/base.css' %}"> {% block style %} {% endblock %}
 
-    {% block style %} {% endblock %}
-    
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
 
+
+</head>
 <body>
+    
+
+    
     {% block content %} {% endblock %}
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
     <script src='https://code.jquery.com/jquery-1.10.1.min.js'></script>
-
     <!--scroll animate-->
     <script src="{% static '/js/scrollanimate.js' %}"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 
+
+
+
+
+<script>
+        // Get the id of the <path> element and the length of <path>
+        var triangle = document.getElementById("triangle");
+        var length = triangle.getTotalLength();
+        
+        // The start position of the drawing
+        triangle.style.strokeDasharray = length;
+        
+        // Hide the triangle by offsetting dash. Remove this line to show the triangle before scroll draw
+        triangle.style.strokeDashoffset = length;
+        
+        // Find scroll percentage on scroll (using cross-browser properties), and offset dash same amount as percentage scrolled
+        window.addEventListener("scroll", myFunction);
+        
+        function myFunction() {
+          var scrollpercent = (document.documentElement.scrollTop) * 3/ (document.documentElement.clientHeight);
+        
+          var draw = length * scrollpercent;
+        
+          // Reverse the drawing (when scrolling upwards)
+          triangle.style.strokeDashoffset = length - draw;
+        }
+        </script>
+</body>
+<footer class="page-footer">
+    <div class="container">
+        <div class="row footer-permision-row">
+            <div class="col s12">
+                <span class="footer-permision-1">서비스 이용약관</span>
+                <span class="footer-permision">개인정보 수집 및 이용</span>
+                <span class="footer-permision">위치정보 수집 및 이용</span>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <span class="footer-info-1 ">(주)이비온</span>
+                <span class="footer-info ">대표자 : 유병훈</span>
+                <span class="footer-info ">사업자등록번호 : 491-86-01010</span>
+            </div>
+            <div class="col s12">
+                <span class="footer-info-1 ">서울특별시 서초구 방배로 93 보령빌딩 3층 319호 (주)이비온 (06686)</span>
+                <span class="footer-info ">방배역 3번출구 앞</span>
+            </div>
+            <div class="col s12">
+                <span class="footer-info-1 ">info@evon.kr</span>
+                <span class="footer-info "> Copyright © evon Inc. All rights reserved.</span>
+            </div>
+        </div>
+    </div>
+</footer>
 </html>

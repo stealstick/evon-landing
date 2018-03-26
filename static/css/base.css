@@ -18,3 +18,10 @@ nav{
 body{
     OVERFLOW-X: HIDDEN;
 }
+.page-footer {
+    padding-top: 80px;
+    color: #4C4C4C;
+    background-color: #EFEFEF;
+
+    padding-bottom: 100px;
+}
