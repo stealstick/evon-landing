@@ -1,0 +1,26 @@
+@font-face {
+    font-family: nanumsquare-bold;
+    src: url('/static/font/NanumSquareBold.ttf');
+}
+nav{
+    background: rgba(0,0,0,0);
+    position: relative;
+}
+.title{
+    font-family: 'nanumsquare-bold';
+    font-size: 38px;
+    color:#00aaff;
+}
+.sub-title{
+
+    font-weight: 600;
+    font-size: 24px;
+}
+.sub-sub-title{
+
+    font-weight: 600;
+    font-size: 18px;
+}
+.contents{
+    margin-top: 40px;
+}

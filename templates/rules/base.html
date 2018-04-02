@@ -1,4 +1,4 @@
- {% load staticfiles %}
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
 
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="{% static '/css/scrollanimate.css' %}">
     <link rel="stylesheet" href="{% static '/css/base.css' %}"> {% block style %} {% endblock %}
 
-    <link rel="shortcut icon" href="{% static '/media/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static '/css/policy.css' %}">     <link rel="shortcut icon" href="{% static '/media/favicon.ico' %}">
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,7 +24,19 @@
 </head>
 <body>
     
-
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">
+                <img src="{% static '/media/logo.png' %}" class="logo">
+            </a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="sass.html" class="grey-text">서비스 이용약관</a></li>
+                <li><a href="badges.html" class="grey-text">개인정보 수집 및 이용</a></li>
+                <li><a href="collapsible.html" class="grey-text">위치정보 수집 및 이용</a></li>
+              </ul>
+        </div>
+            
+    </nav>
     
     {% block content %} {% endblock %}
     <!--Import jQuery before materialize.js-->
@@ -34,15 +46,16 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
+
 </body>
 <footer class="page-footer">
     <div class="container">
         <div class="row footer-permision-row">
-            <div class="col s12">
-                <span class="footer-permision-1"><a class="footer-color" href="/term">서비스 이용약관</a></span>
-                <span class="footer-permision"><a class="footer-color" href="/policy">개인정보 수집 및 이용</a></span>
-                <span class="footer-permision"><a class="footer-color" href="/policy">위치정보 수집 및 이용</a></span>
-            </div>
+                <div class="col s12">
+                        <span class="footer-permision-1"><a class="footer-color" href="/term">서비스 이용약관</a></span>
+                        <span class="footer-permision"><a class="footer-color" href="/policy">개인정보 수집 및 이용</a></span>
+                        <span class="footer-permision"><a class="footer-color" href="/policy">위치정보 수집 및 이용</a></span>
+                    </div>
 
         </div>
         <div class="row">

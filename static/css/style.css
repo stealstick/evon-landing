@@ -27,7 +27,7 @@
     padding-left: 30%;
     padding-right: 30%;
     height: 100vh;
-    overflow: hidden;
+   
 }
 .section-2{
     background-color:rgba(0, 170, 255, 0.05)
@@ -35,7 +35,6 @@
 .section-1-1{
     height:75vh;
     background:rgba(0, 170, 255, 0.7);
-    background-image: url('/static/media/star.svg');
     background-size: cover;
 }
 
@@ -80,10 +79,10 @@
     margin-top: 3vh;
 }
 .section-text-3{
-    margin-top: 32vh;
+    margin-top: 15vh;
 }
 .singo{
-    height:  13vh;
+    width: 100%;
     margin-top: 5vh;
 }
 .google-btn{
@@ -95,9 +94,12 @@
 }
 
 .iphone3{
-    margin-top: 10vh;
-    margin-left:10%;
-    height:  80vh;
+    bottom: 4px;
+    float: right;
+    width: 180%;
+    right:-50%;
+    position: relative;
+    top: 30vh;
 }
 .footer-permision-1{
     font-size: 17px;
